@@ -1,0 +1,10 @@
+PSEUDOCODE
+ 
+BIG_BOX HEIGHT= ENTER THE HEIGHT OF THE BIG BOX- IN INCHES
+SMALL_BOX HEIGHT= ENTER THE HEIGHT OF THE SMALL BOX - IN INCHES
+BOOK_HEIGHT= eNTER THE HEIGHT  IN INCHES(THIVKNESS)
+ORDER = INPUT CUSTOMER ODER- LETS SAY 50
+box_fit = Get remainders when big boxand small box height is devided by book thickness
+
+Check whether a box whther small box will fit the books properly if not fit the big one.
+Check which size of box will produce the least number of boxes. print the fewest number of boxes.
