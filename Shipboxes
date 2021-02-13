@@ -1,0 +1,20 @@
+#Packing boxes with books that a customer has ordered. Remember that there is
+##width of the box or the book, only the height. Each box is packed with a stack of
+#books that are all the same size. You have boxes that are all the same width and
+#length that fits the book exactly, but they are 2 different heights.
+import math
+
+order = int(input('Enter your order in inches '))
+bigBoxHeight = int(input('Enter big box height in inches '))
+smallBoxHeight = int(input('Enter small box height in inches'))
+bookThickness = int(input('Enter book thickness in inches '))
+
+big_box_fit = bigBoxHeight % bookThickness
+small_box_fit = smallBoxHeight % bookThickness
+numberOfbBoxes =(order * bookThickness)/bigBoxHeight
+numberOfsBoxes = (order * bookThickness)/smallBoxHeight
+if big_box_fit == 0:
+    if numberOfbBoxes<numberOfsBoxes:
+        print('Number of bboxes',numberOfbBoxes)
+elif small_box_fit == 0:
+    print('Number of sboxes', numberOfsBoxes)
